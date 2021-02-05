@@ -13,6 +13,12 @@
 		CB41C85825CDCEA6002536A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C84325CDCEA5002536A7 /* ContentView.swift */; };
 		CB41C85925CDCEA6002536A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB41C84425CDCEA6002536A7 /* Assets.xcassets */; };
 		CB41C85A25CDCEA6002536A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB41C84425CDCEA6002536A7 /* Assets.xcassets */; };
+		CB41C86925CDCEE4002536A7 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C86825CDCEE4002536A7 /* AuthManager.swift */; };
+		CB41C86F25CDCF6E002536A7 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C86E25CDCF6E002536A7 /* SearchView.swift */; };
+		CB41C87325CDCF79002536A7 /* EmergenciesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C87225CDCF79002536A7 /* EmergenciesView.swift */; };
+		CB41C87725CDCF85002536A7 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C87625CDCF85002536A7 /* ProfileView.swift */; };
+		CB41C87B25CDCF92002536A7 /* AppointmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C87A25CDCF92002536A7 /* AppointmentsView.swift */; };
+		CB41C87F25CDCFE9002536A7 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB41C87E25CDCFE9002536A7 /* AuthView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		CB41C85125CDCEA6002536A7 /* TestSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB41C85325CDCEA6002536A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CB41C85425CDCEA6002536A7 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		CB41C86825CDCEE4002536A7 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		CB41C86E25CDCF6E002536A7 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		CB41C87225CDCF79002536A7 /* EmergenciesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmergenciesView.swift; sourceTree = "<group>"; };
+		CB41C87625CDCF85002536A7 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CB41C87A25CDCF92002536A7 /* AppointmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentsView.swift; sourceTree = "<group>"; };
+		CB41C87E25CDCFE9002536A7 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +69,8 @@
 		CB41C84125CDCEA5002536A7 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CB41C86725CDCEC1002536A7 /* Managers */,
+				CB41C86525CDCEB7002536A7 /* Views */,
 				CB41C84225CDCEA5002536A7 /* TestSwiftUIApp.swift */,
 				CB41C84325CDCEA5002536A7 /* ContentView.swift */,
 				CB41C84425CDCEA6002536A7 /* Assets.xcassets */,
@@ -88,6 +102,26 @@
 				CB41C85425CDCEA6002536A7 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		CB41C86525CDCEB7002536A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CB41C86E25CDCF6E002536A7 /* SearchView.swift */,
+				CB41C87225CDCF79002536A7 /* EmergenciesView.swift */,
+				CB41C87625CDCF85002536A7 /* ProfileView.swift */,
+				CB41C87A25CDCF92002536A7 /* AppointmentsView.swift */,
+				CB41C87E25CDCFE9002536A7 /* AuthView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CB41C86725CDCEC1002536A7 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				CB41C86825CDCEE4002536A7 /* AuthManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,7 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB41C87B25CDCF92002536A7 /* AppointmentsView.swift in Sources */,
+				CB41C86F25CDCF6E002536A7 /* SearchView.swift in Sources */,
+				CB41C87325CDCF79002536A7 /* EmergenciesView.swift in Sources */,
 				CB41C85725CDCEA6002536A7 /* ContentView.swift in Sources */,
+				CB41C86925CDCEE4002536A7 /* AuthManager.swift in Sources */,
+				CB41C87725CDCF85002536A7 /* ProfileView.swift in Sources */,
+				CB41C87F25CDCFE9002536A7 /* AuthView.swift in Sources */,
 				CB41C85525CDCEA6002536A7 /* TestSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
